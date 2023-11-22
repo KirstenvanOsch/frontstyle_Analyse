@@ -1,0 +1,272 @@
+* { 
+    margin: 0; 
+    padding:0 
+} 
+@font-face {
+    font-family: University Roman Regular;
+    src: url(./University\ Roman\ Regular.ttf) format("trueType");
+}
+@font-face {
+    font-family: "University Roman Bold";
+    src: url(./University\ Roman\ Bold.otf) format("openType");
+}
+@font-face {
+    font-family: "University Regular Italic";
+    src: url(./University\ Roman\ Italic\ Regular.ttf) format("trueType");
+    font-style: italic;
+}
+:root { 
+    --lichtgroen: #D7D9A7; 
+    --donkerbruin: #8F7228; 
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{ 
+    overflow-x: hidden;
+    max-width: 100vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.border  { 
+width: 100vw;
+height: auto;
+z-index: 20;
+top: 1.5em; 
+position: absolute;
+top:0;
+left:0
+
+}
+header { 
+      background: linear-gradient(var(--lichtgroen) 0%, var(--lichtgroen) 60.5%,  white 60%, white 100%) ;  
+    height: 100vh;
+    width: 100vw; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    
+}
+/* .titel { 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--lichtgroen) 0%, var(--lichtgroen) 60%,  white 60%, white 100%) ; 
+    position: relative;
+} */
+.titel img{ 
+    position: absolute; 
+    left: 5vw; 
+    top: -24%; 
+    z-index: 1;
+    max-width: 95vw;
+    right: 0%; 
+    height: 100vh;
+    
+}
+
+
+header p:first-of-type { 
+    font-family: "University Roman Bold", serif;
+    font-weight: 700;
+    color: var(--donkerbruin); 
+    font-size: 2rem;
+    position: absolute;
+    left: 60%; 
+    top:25%;
+    width: 35%; 
+    text-align: center;
+} 
+header p:nth-of-type(2) { 
+    position: absolute; 
+    left: 22.5%; 
+    top: 80%;
+    font-size: 1.5em;
+    font-family: "futura-pt", sans-serif;
+
+
+}
+.informatie { 
+    width: 100vw;
+    object-fit: contain;
+    justify-content: center;
+    position: relative;
+}
+
+.text-border { 
+    
+    width: 80%;
+    display: flex;
+
+}
+ .informatie img { 
+   width: 90%;
+  position: relative;
+  margin-left: 5%;
+}
+
+h1 { 
+    position: absolute;
+    top: -5%; 
+    left: 6%; 
+    /* transform: translate(-50%, -50%); */
+    font-family: "University Roman Bold", serif;
+    font-size: 2em;
+    width: 20%; 
+    
+    
+
+}
+.tekst { 
+    position: absolute;
+    top: 10%; 
+    left:12%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 80%;
+    padding: 1em;
+    align-items: center;
+   
+    
+}
+.text-border p { 
+    font-size: 1.2em; 
+    font-family: 'futura-pt', serif;
+    width: 40%; 
+    padding-bottom: 1em;
+ 
+
+   
+
+}
+
+.quote-banner img{ 
+    position: relative;
+    margin-top: 5em;
+    max-width: 100vw;
+
+}
+.quote-banner { 
+    position: relative;
+    margin-top: 8em;
+
+}
+.quote {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-family: "University Roman Bold", serif;
+    font-style: italic;
+    text-align: center;
+    max-width: 100%;
+    
+}
+.font-family { 
+    display: flex; 
+    flex-direction: row;
+    margin-top: 10em;
+    margin-bottom: 8em; 
+    width: 100vw; 
+    gap: 5%; 
+    flex-wrap: nowrap;
+    justify-content: center; 
+   
+
+}
+h2 { 
+    font-family: "University Roman Bold";
+    font-size: 1.5em; 
+    display: inline-block;
+    padding-bottom: 1em;
+    
+    
+}
+
+.selected-preview-box { 
+    position: relative;
+    /* width: 40%; */
+
+}
+
+#selected-preview  { 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 15em;
+    color: var(--donkerbruin); 
+    /* justify-content: center; */
+    
+}
+
+.font-container { 
+    font-size: 2em; 
+    margin-top: 1em; 
+    letter-spacing: 0.3em;
+    padding-bottom: 0.4em;
+}
+
+.font-name { 
+    padding-bottom: 0.4em; 
+    font-family: "University Roman Bold", sans-serif; 
+    font-size: 0.8em; 
+}
+
+.voorbeeld { 
+  width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color:#686836;
+    
+
+}
+.voorbeeld >img { 
+    width: 50%;
+}
+.tekst-container { 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    justify-content: center;
+    
+}
+.tekst-container{ 
+    position: relative;
+    transform: scale(0.9);
+
+}
+.tekst-bloks p:first-of-type { 
+    font-family: "futura-pt", sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 32%; 
+    left: 10%; 
+    width: 80%;
+    text-align: center;
+    color: #D7D9A7; 
+
+}
+
+.tekst-bloks p:nth-of-type(2) { 
+    font-family: 'University Roman Regular';
+    position: absolute;
+    /* width: 100%; */
+    left: 10%; 
+    top: 40%; 
+    font-size: 3.5em;
+    text-align: center;
+    width: 80%;
+    color: #D7D9A7; 
+
+}
